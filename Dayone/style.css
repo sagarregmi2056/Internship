@@ -8,6 +8,21 @@
     background-color: red;
     color: green;
 }
+.clickme{
+    background-color: firebrick;
+    color: aliceblue;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.clickme:hover{
+    background-color: aqua;
+    color: black;
+
+}
+.clickme a{
+    text-decoration: none;
+}
 
 
 
