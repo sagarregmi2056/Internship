@@ -60,3 +60,19 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+
+
+.animate__animated .animate__bounce{
+   
+    animation-duration: 200s;
+  }
+
+  .wow .bounceup{
+    background-color: red;
+  }
+
+  .swiper {
+    width: 600px;
+    height: 300px;
+  }

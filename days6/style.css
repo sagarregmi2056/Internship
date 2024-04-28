@@ -1,0 +1,55 @@
+
+.topbar{
+    background-color: blue;
+    color: aliceblue;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    
+
+
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+.navbar li{
+    padding-left: 80px;
+}
+
+.navbar {
+    background-color: red;
+    padding: 40px;
+    top:0%;
+    position: sticky;
+   
+}
+
+.joinus{
+    background-color: rgb(244, 176, 50);
+    border: none;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.joinus:hover{
+    border: solid white;
+    background-color: transparent;
+}
+
+
+.img{
+    height: 100px;
+    width: 100px;
+}
+
