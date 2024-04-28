@@ -1,0 +1,127 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(199, 209, 218);
+}
+
+.topbar{
+    background-color: rgb(31, 14, 141);
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+    padding-left: 80px;
+    color: white;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    font-size: 20px;
+}
+.fa-facebook-f{
+    font-size: 30px;
+    cursor: pointer;
+}
+.fa-facebook-f:hover{
+   color: red; 
+   transition: 5s;
+}
+
+.logo img{
+height: 100px;
+width: fit-content;
+display: block;
+margin-left: 20px
+
+}
+
+.navbar{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    top: 0%;
+    z-index: 3;
+    position: sticky;
+}
+
+.menu ul{
+    display: flex;
+
+    list-style: none;
+
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(8, 8, 248);
+    font-weight: bold;
+    
+}
+
+
+
+.menu li{
+    padding-left: 30px;
+}
+
+.menu a:hover{
+    color: rgb(7, 7, 71);
+    transition: 3s;
+}
+
+.joinus{
+    margin-left: 130px;
+    background-color: orange;
+    display: block;
+    border: none;
+    padding: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.joinus:hover{
+    background-color: blue;
+    transition: 3s;
+}
+
+.swiper {
+    width: 1200px;
+    height: 400px;
+  }
+
+
+
+
+  html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }

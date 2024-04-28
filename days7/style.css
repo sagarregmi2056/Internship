@@ -1,0 +1,36 @@
+.swiper {
+    width: 600px;
+    height: 300px;
+
+    font-family: sans-serif,serif; 
+  }
+
+
+.heading{
+    background-color: red;
+
+
+}
+h1{
+
+    background-color: blue;
+   display: inline-block;
+   margin-left: 10px;
+}
+
+
+
+
+
+
+  body{
+    
+    font-family: sans-serif,serif;
+    background-image: url(https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?size=626&ext=jpg&ga=GA1.1.553209589.1713916800&semt=sph);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-color: #cccccc;
+
+  }
+  

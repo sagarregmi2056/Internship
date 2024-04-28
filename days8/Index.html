@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="topbar">
+      <span>Call us: 9803434t345</span>
+      <span><i class="fab fa-facebook-f"></i></span>
+    </div>
+
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="https://www.cmsa.org.np/images/logo.png" alt="">
+        </div>
+
+        <div class="menu">
+          <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">contact</a>
+            </li>
+            <li>
+                <a href="#">gallery</a>
+            </li><li>
+                <a href="#">blog</a>
+            </li>
+          </ul>
+
+        </div>
+
+        <div > <button class="joinus"> <i class="fa fa-heart"></i>  joinus today</button></div>
+
+    </div>
+
+
+
+    <!-- Slider main container -->
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img style="width:100%;" src="https://www.cmsa.org.np/images/banners/IMG_7164_1669900974.jpg" alt=""></div>
+      <div class="swiper-slide"><img style="width:100%;" src="https://www.cmsa.org.np/images/banners/nhh_1669901817.jpg" alt=""></div>
+      
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+
+         autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+  </script>
+    
+
+
+
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, praesentium nemo. Quia ratione iusto fugiat illo voluptate maxime laudantium, optio dolore impedit possimus aut quidem cupiditate repellendus numquam reprehenderit expedita.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, veniam dignissimos! Velit a quis eos atque odit, consequatur voluptas recusandae eius consectetur deserunt quaerat nesciunt mollitia harum quasi eum labore?
+  </p>
+</body>
+</html>
