@@ -19,3 +19,16 @@
     color: white;
    
 }
+
+
+.swiper {
+    width: 1200px;
+    height: 400px;
+  }
+
+  .img{
+ width: 1200px;
+height: auto;
+margin-top: 10px;
+
+}

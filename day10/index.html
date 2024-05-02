@@ -5,8 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>anurag</title>
     <link rel="stylesheet" href="style.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
+
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img  class="img" src="https://www.cmsa.org.np/images/banners/IMG_7164_1669900974.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="img" src="https://www.cmsa.org.np/images/banners/nhh_1669901817.jpg" alt=""></div>
+          <div class="swiper-slide"><img class="img" src="https://www.cmsa.org.np/images/banners/IMG_7164_1669900974.jpg" alt=""></div>
+          ...
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
   <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et sed, asperiores deleniti minus porro obcaecati, molestiae hic laudantium fuga ullam eaque. Iste tenetur fugiat omnis ex adipisci quisquam consequuntur perspiciatis.</p>
 <h1 class="anurag">anurag Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nobis ullam excepturi porro enim eligendi itaque rem delectus voluptate saepe iusto sed, dolorum eos, sapiente cum aliquid! Atque, animi ab!</h1>
 
@@ -17,7 +44,32 @@ https://uxdt.nic.in/wp-content/uploads/2020/02/loginform3_p-3.png
 
 
 
-
+<script>
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        autoplay: {
+            delay: 300,
+          },
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+</script>
     
 </body>
 </html>
