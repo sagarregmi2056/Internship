@@ -2,6 +2,10 @@ body{
     background-color: rgb(249, 246, 246);
 }
 
+h1{
+    text-align: center;
+}
+
 .main{
     background-color:rgb(249, 246, 246);;
     margin: 20px;
@@ -22,6 +26,12 @@ body{
     margin-bottom: 10px;
 }
 .fa-twitter{
-    background-color: red;
+    background-color: blue;
     color: aliceblue;
+}
+.main div i{
+    font-size: 40px;
+    padding: 20px;
+    border-radius: 50%;
+    margin-top: 10px;
 }
