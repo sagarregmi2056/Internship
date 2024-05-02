@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(249, 246, 246);
+}
+
+.main{
+    background-color:rgb(249, 246, 246);;
+    margin: 20px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-content: space-around;
+    align-items: center;
+   
+   text-align: center;
+   gap: 20px;
+
+}
+.main div{
+    background-color: aliceblue;
+    border: solid 2px;
+}
+.main div button{
+    margin-bottom: 10px;
+}
+.fa-twitter{
+    background-color: red;
+    color: aliceblue;
+}
