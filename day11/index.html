@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="js/wow.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -195,8 +198,581 @@
   <div class="arrow-up">
 <a href="#hello"> <i class="fa fa-arrow-up"></i></a>
   </div>
+  <div class="bg-white">
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Product</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Features</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Company</a>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-50"></div>
+        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Company</a>
+              </div>
+              <div class="py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Log in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+      <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+            Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+        <div class="text-center">
+          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Data to enrich your online business</h1>
+          <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>
+          <div class="mt-10 flex items-center justify-center gap-x-6">
+            <a href="#" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
+            <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
+        <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--
+  This example requires updating your template:
+
+  ```
+  <html class="h-full bg-gray-100">
+  <body class="h-full">
+  ```
+-->
+<div class="min-h-full">
+  <nav class="bg-gray-800">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <img class="h-8 w-8" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Dashboard</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Team</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Projects</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Calendar</a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Reports</a>
+            </div>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-4 flex items-center md:ml-6">
+            <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+              <span class="absolute -inset-1.5"></span>
+              <span class="sr-only">View notifications</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+              </svg>
+            </button>
+
+            <!-- Profile dropdown -->
+            <div class="relative ml-3">
+              <div>
+                <button type="button" class="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                  <span class="absolute -inset-1.5"></span>
+                  <span class="sr-only">Open user menu</span>
+                  <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+                </button>
+              </div>
+
+              <!--
+                Dropdown menu, show/hide based on menu state.
+
+                Entering: "transition ease-out duration-100"
+                  From: "transform opacity-0 scale-95"
+                  To: "transform opacity-100 scale-100"
+                Leaving: "transition ease-in duration-75"
+                  From: "transform opacity-100 scale-100"
+                  To: "transform opacity-0 scale-95"
+              -->
+              <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
+                <!-- Active: "bg-gray-100", Not Active: "" -->
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <!-- Mobile menu button -->
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!-- Menu open: "hidden", Menu closed: "block" -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!-- Menu open: "block", Menu closed: "hidden" -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="md:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2 sm:px-3">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#" class="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium" aria-current="page">Dashboard</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Team</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Projects</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Calendar</a>
+        <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Reports</a>
+      </div>
+      <div class="border-t border-gray-700 pb-3 pt-4">
+        <div class="flex items-center px-5">
+          <div class="flex-shrink-0">
+            <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="">
+          </div>
+          <div class="ml-3">
+            <div class="text-base font-medium leading-none text-white">Tom Cook</div>
+            <div class="text-sm font-medium leading-none text-gray-400">tom@example.com</div>
+          </div>
+          <button type="button" class="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <span class="absolute -inset-1.5"></span>
+            <span class="sr-only">View notifications</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-3 space-y-1 px-2">
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Your Profile</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Settings</a>
+          <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Sign out</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-white shadow">
+    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+      <h1 class="text-3xl font-bold tracking-tight text-gray-900">Dashboard</h1>
+    </div>
+  </header>
+  <main>
+    <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+      <!-- Your content -->
+    </div>
+  </main>
+</div>
+
+
+<section>
+  <div class="grid grid-cols-1 lg:grid-cols-2">
+    <div class="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
+      <div class="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
+        <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl">
+          Sign in
+        </h2>
+        <p class="mt-2 text-sm text-gray-600">
+          Don&#x27;t have an account?{" "}
+          <a
+            href="#"
+            title=""
+            class="font-semibold text-black transition-all duration-200 hover:underline"
+          >
+            Create a free account
+          </a>
+        </p>
+        <form action="#" method="POST" class="mt-8">
+          <div class="space-y-5">
+            <div>
+              <label for="" class="text-base font-medium text-gray-900">
+                {" "}
+                Email address{" "}
+              </label>
+              <div class="mt-2">
+                <input
+                  class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                  type="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div>
+              <div class="flex items-center justify-between">
+                <label for="" class="text-base font-medium text-gray-900">
+                  {" "}
+                  Password{" "}
+                </label>
+                <a
+                  href="#"
+                  title=""
+                  class="text-sm font-semibold text-black hover:underline"
+                >
+                  {" "}
+                  Forgot password?{" "}
+                </a>
+              </div>
+              <div class="mt-2">
+                <input
+                  class="flex h-10 w-full rounded-md border border-gray-300 bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-1 focus:ring-gray-400 focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-50"
+                  type="password"
+                  placeholder="Password"
+                />
+              </div>
+            </div>
+            <div>
+              <button
+                type="button"
+                class="inline-flex w-full items-center justify-center rounded-md bg-black px-3.5 py-2.5 font-semibold leading-7 text-white hover:bg-black/80"
+              >
+                Get started{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="ml-2"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="mt-3 space-y-3">
+          <button
+            type="button"
+            class="relative inline-flex w-full items-center justify-center rounded-md border border-gray-400 bg-white px-3.5 py-2.5 font-semibold text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black focus:outline-none"
+          >
+            <span class="mr-2 inline-block">
+              <svg
+                class="h-6 w-6 text-rose-500"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z"></path>
+              </svg>
+            </span>
+            Sign in with Google
+          </button>
+          <button
+            type="button"
+            class="relative inline-flex w-full items-center justify-center rounded-md border border-gray-400 bg-white px-3.5 py-2.5 font-semibold text-gray-700 transition-all duration-200 hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black focus:outline-none"
+          >
+            <span class="mr-2 inline-block">
+              <svg
+                class="h-6 w-6 text-[#2563EB]"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
+              </svg>
+            </span>
+            Sign in with Facebook
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="h-full w-full">
+      <img
+        class="mx-auto h-full w-full rounded-md object-cover"
+        src="https://images.unsplash.com/photo-1630673245362-f69d2b93880e?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=1740&amp;q=80"
+        alt=""
+      />
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="relative overflow-hidden py-10">
+  <div class="relative mx-auto max-w-7xl px-4">
+    <div class="mx-auto mb-24 max-w-2xl text-center lg:max-w-5xl">
+      <h1 class="mb-8 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
+        Lorem ipsum dolor sit amet consectetur.
+      </h1>
+      <p class="text-lg text-gray-500">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam,
+        blanditiis.
+      </p>
+    </div>
+    <div class="mx-auto max-w-5xl">
+      <div class="flex flex-wrap items-center">
+        <div class="w-full lg:-mr-2 lg:w-1/3">
+          <div class="mx-auto max-w-sm rounded-md border border-gray-200 bg-white pb-20 pl-5 pr-8 pt-6 lg:pb-8">
+            <span class="mb-2 block text-sm font-semibold text-gray-400">
+              PREMIUM
+            </span>
+            <span class="flex items-end">
+              <span class="text-4xl font-extrabold leading-none">$150</span>
+              <span class="text-sm font-semibold">/month</span>
+            </span>
+            <div class="mt-7 border-t border-gray-100 pt-5">
+              <ul class="mb-10">
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">No Discount</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">Basic Support</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">
+                    Ads Banner Free
+                  </span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">Design Style</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">
+                    Component Library
+                  </span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">
+                    All limited links
+                  </span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">
+                    Own analytics platform
+                  </span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">Chat support</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">
+                    Optimize hashtags
+                  </span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">
+                    Unlimited users
+                  </span>
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              >
+                Choose Plan
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="-mt-4 w-full lg:-mt-0 lg:w-1/3">
+          <div class="pt-22 relative mx-auto max-w-sm rounded-lg bg-black px-10 pb-16 ">
+            <div class="absolute left-1/2 top-0 inline-flex -translate-x-1/2 -translate-y-1/2 transform items-center justify-center rounded-full bg-white p-2">
+              <div class="flex-shrink-0 rounded-full bg-black px-5 py-4 text-sm font-semibold uppercase text-white">
+                Most Popular
+              </div>
+            </div>
+            <span class="mb-2 block pt-10 text-sm font-semibold text-white">
+              GOLD
+            </span>
+            <span class="flex items-end text-white">
+              <span class="text-4xl font-extrabold leading-none">$100</span>
+              <span class="text-sm font-semibold">/month</span>
+            </span>
+            <div class="mt-7 border-t border-orange-500 pt-5">
+              <ul class="mb-10">
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-white">No Discount</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-white">Basic Support</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-white">Ads Banner Free</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-white">Design Style</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-white">Component Library</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-white">All limited links</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-white">
+                    Own analytics platform
+                  </span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-white">Chat support</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-white">Optimize hashtags</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-white">Unlimited users</span>
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="rounded-md bg-white px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Choose Plan
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="-mt-4 w-full lg:-ml-2 lg:-mt-0 lg:w-1/3">
+          <div class="rounded-b-5xl lg:rounded-r-5xl mx-auto max-w-sm border border-gray-200 bg-white pb-8 pl-8 pr-5 pt-12 lg:rounded-b-none lg:pt-6">
+            <span class="mb-2 block text-sm font-semibold text-gray-400">
+              PREMIUM
+            </span>
+            <span class="flex items-end">
+              <span class="text-4xl font-extrabold leading-none">$150</span>
+              <span class="text-sm font-semibold">/month</span>
+            </span>
+            <div class="mt-7 border-t border-gray-100 pt-5">
+              <ul class="mb-10">
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">No Discount</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">Basic Support</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">
+                    Ads Banner Free
+                  </span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">Design Style</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">
+                    Component Library
+                  </span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">
+                    All limited links
+                  </span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">
+                    Own analytics platform
+                  </span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">Chat support</span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">
+                    Optimize hashtags
+                  </span>
+                </li>
+                <li class="mb-6 flex items-center">
+                  <span class="ml-2 text-sm text-gray-900">
+                    Unlimited users
+                  </span>
+                </li>
+              </ul>
+              <button
+                type="button"
+                class="rounded-md border border-black px-3 py-2 text-sm font-semibold text-black shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              >
+                Choose Plan
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<h1 class=" pt-6 pb-6 m-8 bg-blue-400 shadow-2xl underline decoration-sky-500/30 text-3xl font-bold underline">
+  Hello world!
+</h1>
+
+
+<div class="flex flex-col space-y-4 ...">
+  <div class="bg-red-700" >01</div>
+  <div  class="bg-blue-700">02</div>
+  <div  class="bg-green-700">03</div>
+</div>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+
+<button style="background-color: #0B1875; margin-left: 10px ;margin-top: 10px" class="wow rubberBand" id="changecolor" >click me</button>
+
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt quae cumque amet assumenda illo, deleniti enim exercitationem quisquam eos dolore dignissimos maiores est, reprehenderit eius, sunt voluptatum? Soluta, corporis praesentium.</p>
+
+<script>
+new WOW().init();
+</script>
 </body>
 </html>
