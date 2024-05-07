@@ -1,0 +1,29 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+#head{
+    background-color: rgb(51, 6, 155);
+}
+
+.fa-arrow-up{
+    font-size: 40px;
+
+}
+/* relative ho mah */
+body{
+    position: relative;
+}
+.arrowtop{
+   background-color: red; 
+   margin-left:10px;
+   position: absolute;
+   bottom: 10%;
+   right: 4%;
+   position: fixed;
+   z-index: 3;
+   padding: 5px;
+   border-radius: 12px;
+   
+}
