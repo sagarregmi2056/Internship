@@ -8,6 +8,9 @@
     margin: 0%;
     padding: 0%;
 }
+.header{
+    background-color: red;
+}
 
 .anurag{
     background-color: blue;
@@ -31,4 +34,39 @@
 height: auto;
 margin-top: 10px;
 
+}
+
+
+.nav{
+    background-color: rgb(237, 230, 230);
+
+    margin-bottom: 200px;
+    position: sticky;
+    top: 0%;
+    z-index: 3;
+
+    
+
+
+}
+
+
+.ul{
+    background-color: rgb(237, 230, 230);
+
+    margin-bottom: 200px;
+    position: sticky;
+    top: 0%;
+    z-index: 130;
+}
+.nav a{
+    text-decoration: none;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav li{
+    padding: 20px;
 }
