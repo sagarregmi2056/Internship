@@ -1,12 +1,21 @@
-// const item = {
-//   itemName: "sanjok",
-//   price: 400,
-//   description: "this is good item",
-//   Color: "blue",
-//   fullDiscription: function () {
-//     return this.itemName + " " + this.Color + " " + this.description;
+// const amrit = {
+//   firstName: "amrit",
+//   color: "balacck",
+//   description: "he is good man",
+//   lastName: "regmi",
+//   color: "blue",
+//   fullName: function () {
+//     return this.firstName + " " + this.lastName;
 //   },
 // };
+
+// birami {name number address doctorname description}
+
+// console.log(amrit.color);
+
+// const name = "amrit";
+// name = "regmi";
+// console.log(name);
 
 // console.log(item.fullDiscription());
 
@@ -30,23 +39,61 @@
 
 // fulldescription()
 
-var name = "sagar";
-var lastName = "regmi";
+// var name = "sagar";
+// var lastName = "regmi";
 
 // console.log(name == lastName);
 
 // console.log(name == lastName ? "yes" : "no");
 
-var bookPrice = 8085;
-var microprocessor = "8085";
+// var bookPrice = 8085;
+// var microprocessor = "8085";
 
-var fullname = bookPrice - microprocessor;
+// var fullname = bookPrice - microprocessor;
 
-console.log(typeof bookPrice);
-console.log(typeof microprocessor);
+// console.log(typeof bookPrice);
+// console.log(typeof microprocessor);
 
-console.log(typeof fullname);
+// console.log(typeof fullname);
 
 // conditional statement
 
-console.log(bookPrice === microprocessor ? "yes" : "no");
+// console.log(bookPrice === microprocessor ? "yes" : "no");
+
+// const student = {
+//   id: 343434,
+//   name: "sagar",
+//   age: 34,
+
+//   fulldetails: function () {
+//     return this.id + " " + this.name + " " + this.age;
+//   },
+// };
+
+// console.log(student.fulldetails());
+
+var name =
+  "loremespasdaskcfjahkfuhkawshefkjwhefkuhawieufhikuWHFKAHKFJKJHFKAJBKAWEHRIUAWHEKFUHKWUHERFIuhwefkuhawkeufhkWUEFHKWAUEHFAKWHEFUHAWEFHAWEHFAWUEFHAWEHFAWHFWAHEFOWEHOAIWHFOAWHFOAWHEFAOWFHAOWIFOWFHAOWFAIWFAOWEAWOFIAOWIFIWFOAWEOWIEFIAOWFOAWFOIAOAIWEAOWEIJWOIEOAWEJAI";
+
+console.log(name.length);
+
+const bookname = "8085";
+
+var price = 8085;
+
+var sum = bookname - price;
+
+// console.log(typeof sum);
+
+console.log(bookname === price ? "yes" : "no");
+
+const amrit = "balkumari";
+
+console.log(amrit);
+
+const capitalletter = amrit.toUpperCase();
+
+const lowercase = amrit;
+
+console.log(capitalletter);
+console.log(lowercase);
