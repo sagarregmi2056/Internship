@@ -1,66 +1,50 @@
-<html>
-<body id="wholebody">
-
-<!-- darkmode change garna lai -->
-<style>
-    .darkmode{
-        background-color: black;
-        color: white;
-    }
-</style>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
 
 
+    <div class="nav">
+        <ul>
+            <li><a href="#"> Home   </a></li>
 
-
-<!-- no logic here -->
-<h1>welcome to my Sapiente</h1>
-<div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut repellendus vitae laborum cumque architecto excepturi quis alias explicabo? Sequi error aperiam autem magni doloribus odio ex assumenda voluptates dignissimos incidunt.</p></div>
-
-<h1>sagar regmi</h1>
-
-<!-- onclick garda nokar function lai call garyo -->
-<button onclick="nokar()">Click me</button>
+            <li><a href="#"> about us  </a></li>
+            <li><a href="#"> contact us  </a></li>
+        </ul>
+        <img src="https://www.cmsa.org.np/images/logo.png" alt="loading...">
+    </div>
 
 
 
 
 
+    <style>
+        .cssdark{
+            background-color: rgb(54, 52, 52);
+            color:aliceblue
+        }
+    </style>
 
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quia tenetur voluptate mollitia laborum nulla voluptatum iure, excepturi natus. Rem odio distinctio consequuntur tenetur repellat velit dolores itaque odit facere!</p>
 
-
-
-
-
+<button  onclick="darkmode()">dark/light mode</button>
 
 <script>
-<!-- calling this function after clicking button -->
 
-    function nokar()
-   
-   {
+    function darkmode(){
+       var element = document.getElementById("body");
 
+       element.classList.toggle("cssdark");
+    }
 
-
-    //element = wholebody means bodytag sabai
-var element = document.getElementById("wholebody");
-
- //button lai toggle garda action chai .darkmode on or off gardey
-element.classList.toggle("darkmode");
-
-
-
-    
-
-
-
-
-
-   }
 
 </script>
-
+    
 </body>
 </html>
-
 
