@@ -21,6 +21,7 @@ const fruits = [
   "apple",
   "banana",
   "orange",
+
   "grape",
   "strawberry",
   "blueberry",
@@ -103,9 +104,57 @@ const fruits = [
   "pomegranate",
   "fig",
   "coconut",
+
+  //   sagar
   "nectarine",
   "raspberry",
   "blackberry",
   "cantaloupe",
   "honey",
 ];
+
+// translate to capital letter for all element in array
+
+const newfruit = fruits.map((fruit) => {
+  return fruit.toUpperCase();
+});
+console.log(newfruit.sort().toString());
+
+// fruits.forEach((element) => {
+//   console.log(element);
+// });
+// ascending order for all element in array
+// check if it include cherry
+console.log(fruits.includes("cherry"));
+// check the index of cherry
+
+console.log(fruits.indexOf("cherry"));
+// splice
+
+const addsagar = fruits.splice(13, 100, "sagar", "saugat");
+//
+console.table(fruits);
+
+// Original object
+const originalObject = {
+  name: "John",
+  age: 30,
+};
+
+// Updated object
+const updatedObject = { ...originalObject, age: 31 };
+
+// Log old and new values
+console.log("Old:", originalObject);
+console.log("New:", updatedObject);
+
+const lastname = {
+  name: "",
+  lastname: "",
+  age: 0,
+};
+
+const newlastname = { ...lastname, name: "anurag", lastname: "regmi", age: 24 };
+console.log(newlastname);
+
+console.log(lastname);

@@ -197,8 +197,8 @@
 // console.table(fruits);
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
-fruits[fruits.length] = "sagar";
-fruits[fruits.length] = "sagar1";
+// fruits[fruits.length] = "sagar";
+// fruits[fruits.length] = "sagar1";
 
 // const copyvalue = fruits.copyWithin(3, 0);
 console.log(fruits);
