@@ -1,7 +1,6 @@
 fetch("https://dummyjson.com/products")
   //This processes the response received from the server. It converts the response body to JSON format.
   .then((response) => {
-    console.log(response.json());
     return response.json();
   })
   .then((data) => {
@@ -12,8 +11,9 @@ fetch("https://dummyjson.com/products")
     const newdata = data.products;
     //: This initializes an empty string rows, which will be used to store HTML table rows.
     let rows = "";
+
     newdata.forEach((product) => {
-      rows += `<tr><td> ${product.id}</td></tr>`;
+      rows += `<tr><td> ${product.id}</td><td>${product.title}  </td> `;
     });
     document.getElementById("dynamicdata").innerHTML = rows;
   })
