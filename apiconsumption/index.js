@@ -1,5 +1,17 @@
 const getapidata = async () => {
-  await fetch("https://fakestoreapi.com/products")
+  var url =
+    "https://newsapi.org/v2/everything?" +
+    "q=Apple&" +
+    "from=2024-05-24&" +
+    "sortBy=popularity&" +
+    "apiKey=ff17a033d1a245698f17e1cda67f17f6";
+
+  var req = new Request(url);
+
+  await fetch(req)
+    .then(function (response) {
+      console.log(response.json());
+    })
     .then((res) => {
       return res.json();
     })

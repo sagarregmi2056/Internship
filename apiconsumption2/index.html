@@ -201,24 +201,32 @@
 
 <script>
 
- 
+
 
     
-      fetch(".")
+  const url = 'https://api.worldnewsapi.com/search-news?text=tesla&language=en';
+  const apiKey = '5a67b63d95b24d01be72854af18e3015';
+  
+  fetch(url, {
+      method: 'GET',
+      headers: {
+          'x-api-key': apiKey
+      }
+  })
     .then(res=>{
         return res.json();
 
     }).then(data=>{
 
 
-      console.log(data);
+      console.log(data.news);
        
-        const newdata = data;
+        const newdata = data.news;
        
     
         let rows = "";
 
-newdata.forEach((ourproduct) => {
+newdata.forEach((singlenews) => {
   
   
 
@@ -229,16 +237,17 @@ newdata.forEach((ourproduct) => {
 rows += `           
     
 <div class=" row align-content-center justify-content-center card col-md-4 mb-3 " style="width: 18rem; margin: 10px 0px; ">
-  <img style="width: 100px  ; height: 90px;" src=${ourproduct.image}/>
+  <img style="width: 100px  ; height: 90px;" src=${singlenews.image}/>
   <div >
-    <h5 >${ourproduct.title}</h5>
+    <h5 >${singlenews.summary}</h5>
     <p >
-      ${ourproduct.description}
+      ${singlenews.tile}
     </p>
 
 
     
-    <button class="btn btn-primary">rate ${ourproduct.rating.rate}</button>
+    <button class="btn btn-primary">rate ${singlenews.text
+    }</button>
   </div>
 
   <div class="card-footer">
@@ -248,7 +257,7 @@ rows += `
 
 
  `
- console.log(ourproduct.rating.rate);
+ console.log(singlenews.image);
 
  
 });

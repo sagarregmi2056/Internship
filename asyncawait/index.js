@@ -17,65 +17,65 @@
 // console.log("five");
 // console.log("six");
 
-const myasyncfunction = async () => {
-  console.log("one");
-  console.log("two");
-  await console.log("three");
-};
-console.log("four");
-myasyncfunction();
-console.log("five");
-console.log("six");
-console.log("seven");
-console.log("eight");
+// const myasyncfunction = async () => {
+//   console.log("one");
+//   console.log("two");
+//   await console.log("three");
+// };
+// console.log("four");
+// myasyncfunction();
+// console.log("five");
+// console.log("six");
+// console.log("seven");
+// console.log("eight");
 
-// four one two three five
+// // four one two three five
 
-function myDisplayer(some) {
-  console.log("i need to print before hi");
-  console.log(some);
-}
+// function myDisplayer(some) {
+//   console.log("i need to print before hi");
+//   console.log(some);
+// }
 
-function myFirst() {
-  console.log("welcome");
-  myDisplayer("Hello");
-  console.log("hi");
-}
+// function myFirst() {
+//   console.log("welcome");
+//   myDisplayer("Hello");
+//   console.log("hi");
+// }
 
-function mySecond() {
-  myDisplayer("Goodbye");
-}
+// function mySecond() {
+//   myDisplayer("Goodbye");
+// }
 
-myFirst();
-mySecond();
+// myFirst();
+// mySecond();
 
-const radio = () => {
-  console.log("speaker");
-  console.log("antena");
-  console.log("battery");
-  console.log("tape reels");
-};
+// const radio = () => {
+//   console.log("speaker");
+//   console.log("antena");
+//   console.log("battery");
+//   console.log("tape reels");
+// };
 
-const tv = async () => {
-  await radio();
-  console.log("display");
-  setTimeout(() => {
-    console.log("i want to be last");
-  }, 9000);
-  console.log("network");
-};
+// const tv = async () => {
+//   await radio();
+//   console.log("display");
+//   setTimeout(() => {
+//     console.log("i want to be last");
+//   }, 9000);
+//   console.log("network");
+// };
 
-const laptop = () => {
-  tv();
-  console.log("keyboard");
-  console.log("mouse");
-  console.log("monitor");
-  console.log("power button");
-};
+// const laptop = () => {
+//   tv();
+//   console.log("keyboard");
+//   console.log("mouse");
+//   console.log("monitor");
+//   console.log("power button");
+// };
 
-laptop();
+// laptop();
 
-const interval = 5000;
-setTimeout(() => {
-  console.log("welcome");
-}, interval);
+// const interval = 5000;
+// setTimeout(() => {
+//   console.log("welcome");
+// }, interval);
