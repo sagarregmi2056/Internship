@@ -59,7 +59,9 @@ const radio = () => {
 const tv = async () => {
   await radio();
   console.log("display");
-  console.log("screen");
+  setTimeout(() => {
+    console.log("i want to be last");
+  }, 9000);
   console.log("network");
 };
 
@@ -72,3 +74,8 @@ const laptop = () => {
 };
 
 laptop();
+
+const interval = 5000;
+setTimeout(() => {
+  console.log("welcome");
+}, interval);
