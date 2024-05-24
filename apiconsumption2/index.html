@@ -204,29 +204,41 @@
  
 
     
-      fetch("https://dummyjson.com/products")
+      fetch(".")
     .then(res=>{
         return res.json();
 
     }).then(data=>{
+
+
+      console.log(data);
        
-        const newdata = data.products;
+        const newdata = data;
        
     
         let rows = "";
 
-newdata.forEach((product) => {
+newdata.forEach((ourproduct) => {
+  
+  
+
+
+
     
     
 rows += `           
     
 <div class=" row align-content-center justify-content-center card col-md-4 mb-3 " style="width: 18rem; margin: 10px 0px; ">
-  <img style="width: 100px  ; height: 90px;" src=${product.thumbnail} alt="Hollywood Sign on The Hill"/>
+  <img style="width: 100px  ; height: 90px;" src=${ourproduct.image}/>
   <div >
-    <h5 >${product.title}</h5>
+    <h5 >${ourproduct.title}</h5>
     <p >
-      ${product.description}
+      ${ourproduct.description}
     </p>
+
+
+    
+    <button class="btn btn-primary">rate ${ourproduct.rating.rate}</button>
   </div>
 
   <div class="card-footer">
@@ -236,6 +248,7 @@ rows += `
 
 
  `
+ console.log(ourproduct.rating.rate);
 
  
 });

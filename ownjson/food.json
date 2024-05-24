@@ -1,0 +1,35 @@
+{
+    "menu": [
+      {
+        "name": "Bruschetta",
+        "description": "Grilled bread topped with diced tomatoes, basil, garlic, and olive oil.",
+        "price": 8.50,
+        "image_url": "https://avatars.githubusercontent.com/u/115308062?v=4"
+      },
+      {
+        "name": "Caesar Salad",
+        "description": "Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.",
+        "price": 10.00,
+        "image_url": "https://unsplash.com/photos/cooked-food-on-white-plate-_F6i13Z9xtY"
+      },
+      {
+        "name": "Margherita Pizza",
+        "description": "Classic pizza with tomato sauce, mozzarella cheese, and fresh basil.",
+        "price": 12.00,
+        "image_url": "https://unsplash.com/photos/dish-with-tomato-salad-toppings-rPkgYDh2bmo"
+      },
+      {
+        "name": "Spaghetti Carbonara",
+        "description": "Spaghetti in a creamy sauce with pancetta, eggs, and Parmesan cheese.",
+        "price": 14.00,
+        "image_url": "https://unsplash.com/photos/spaghetti-carbonara-Y9_W20m4n5I"
+      },
+      {
+        "name": "Tiramisu",
+        "description": "Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cheese.",
+        "price": 7.00,
+        "image_url": "https://unsplash.com/photos/tiramisu-dessert-O3zo2uSbgiI"
+      }
+    ]
+  }
+  
